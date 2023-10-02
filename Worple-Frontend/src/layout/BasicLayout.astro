@@ -1,0 +1,13 @@
+---
+import Header from "../components/HeaderComponent/Header.astro"
+import Footer from "../components/FooterComponent/Footer.astro"
+import Networkbar from "../components/NetworkbarComponent/Networkbar.astro"
+import Body from "../components/BodyComponent/Body.jsx"
+---
+
+<main>
+    <Header />
+    <Networkbar />
+    <Body client:load />
+    <Footer />
+</main>

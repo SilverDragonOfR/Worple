@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.correct-box {
+    color: honeydew;
+    background-color: black;
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+.correct-box:hover {
+    transform: scale(1.02);
+    transition-duration: 200ms;
+}
+.secretword {
+    font-size: 2rem;
+    color: hotpink;
+}

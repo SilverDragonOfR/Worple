@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.enterkey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    border-radius: 10%;
+    box-shadow: 0 0 3px 0px black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: honeydew;
+    font-weight: bold;
+}
+.enterkey:hover {
+    opacity: 0.8;
+    scale: 1.02;
+    transition-duration: 0.2s;
+}
+.enterkey:active {
+    scale: 0.98;
+    background-color: black;
+    color: hotpink;
+}
+.enterletter {
+    text-align: center;
+    width: 60px;
+}
+@media screen and (min-width: 900px) {
+    .enterletter {
+        width: min(5.5vw,70px);
+    }
+}

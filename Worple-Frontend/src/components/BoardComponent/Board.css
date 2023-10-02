@@ -1,0 +1,23 @@
+.board-outer {
+    padding: 7px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 2%;
+    box-shadow: 0 0 5px 0 black;
+    border: 2px solid gold;
+    z-index: -2;
+}
+.board-inner {
+    background-color:black;
+    display: grid;
+    grid-column: 5;
+    grid-template-columns:  40px 40px 40px 40px 40px;
+    gap: 7px;
+}
+@media screen and (min-width: 900px) {
+    .board-inner {
+        grid-template-columns:  4vw 4vw 4vw 4vw 4vw ;
+    }
+}

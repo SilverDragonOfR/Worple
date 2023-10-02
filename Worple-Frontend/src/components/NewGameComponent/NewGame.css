@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+.new-box {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 1rem;
+    box-shadow: 0 0 10px 0 black;
+    color: honeydew;
+    cursor: pointer;
+    width: 100%;
+}
+.new-box:hover {
+    transform: scale(1.02);
+    transition-duration: 200ms;
+}
+.newgame-timer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.newgame-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 2px solid honeydew;
+    background-color: hotpink;
+    color: honeydew;
+}
+.newgame-btn:disabled {
+    opacity: 0%;
+}
+.newgame-btn:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    border: 2px solid black;
+    background-color: gold;
+    color: hotpink;
+    cursor: pointer;
+}
+.newgame-btn:active {
+    transform: scale(0.9);
+}

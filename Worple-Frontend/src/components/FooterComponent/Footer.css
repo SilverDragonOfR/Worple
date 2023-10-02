@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.footer-container {
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 5px 0px black;
+}
+.footer-title {
+    color: honeydew;
+    font-family: 'Macondo', cursive;
+}
+.footer-title:hover {
+    scale: 1.05;
+    color: hotpink;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer-hr {
+    color: honeydew;
+    width: 100%
+}
+.footer-ul {
+    display: flex;
+    gap: 2rem;
+}
+.footer-link {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: honeydew;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: hotpink;
+    transition-duration: 0.3s;
+}
+.footer-heart {
+    scale: 2;
+}
+.footer-lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+/* .suggest-form {
+    display: flex;
+    gap: 1rem;
+} */
+.suggest-input {
+    outline: none;
+    border: none;
+    background-color: honeydew;
+    border: 2px solid black;
+    height: 1.5rem;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.suggest-input:focus {
+    border: 2px solid hotpink;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+.header-container {
+    background-color: black;
+    padding: 0.5rem 0rem;
+    box-shadow: 0 0 5px 0px black;
+}
+.header-div-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.header-div {
+    font-size: min(5vw,1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-title {
+    color:honeydew;
+    font-family: 'Croissant One', cursive;
+}
+.header-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    justify-self: space-between;
+}
+.header-button {
+    font-size: 1.3rem;
+    width: 11rem;
+    background-color:mediumvioletred;
+    color:honeydew;
+    padding: 5px;
+    border-radius: 30px;
+    border: 3px solid honeydew;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.header-button:hover {
+    background-color: gold;
+    color: mediumvioletred;
+    border: 0px solid mediumvioletred;
+    transition-duration: 0.3s;
+}
+.header-button:active {
+    scale: 0.9;
+}
+.user-info-display {
+    color: honeydew;
+    font-family: 'Macondo', cursive;
+    font-size: 1.5rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.user-info-display-h3 {
+    font-weight: 400;
+}
+.user-info-display-img {
+    width: 30px;
+    border-radius: 100%;
+    border: 2px solid gold;
+}

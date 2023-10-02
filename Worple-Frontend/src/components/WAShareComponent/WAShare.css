@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wa-box {
+    width: 100%;
+    background-color: black;
+    color: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.wa-box:hover {
+    transform: scale(1.02);
+    transition-duration: 200ms;
+}
+.waexp {
+    color: honeydew;
+    font-size: 1.2rem;
+}
+.wadm {
+    color: limegreen;
+    font-size: 1.7rem;
+}

@@ -1,0 +1,47 @@
+---
+import "./Footer.css"
+const githubLink = "https://github.com/SilverDragonOfR"
+const instagramLink = "https://www.instagram.com/the_khazad_dum/"
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<footer class="footer-container">
+    <div class="footer-div">
+        <h2 class="footer-title">Made with <span class="footer-heart">💖</span> by Pratik Tripathy</h2>
+        <hr class="footer-hr">
+        <div class="footer-lower">
+            <ul class="footer-ul">
+                <li><a href={githubLink} target="_blank" class="footer-link"><i class="fa fa-github"></i></a></li>
+                <li><a href={instagramLink} target="_blank" class="footer-link"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <form class="suggest-form">
+                <input class="suggest-input" type="text" placeholder="Suggest a word" maxlength=5 minlength=5 pattern="[a-zA-Z]{5}" title="A 5-lettered word comprising of a-z or A-Z">
+            </form>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const suggestForm = document.querySelector('.suggest-form');
+    const suggestInput = document.querySelector('.suggest-input');
+    suggestForm.addEventListener('submit', async (event) => {
+        event.preventDefault()
+        const suggestedWord = suggestInput.value
+
+        // making the post request
+        const NEW_WORD_API_ADDRESS = import.meta.env.PUBLIC_NEW_WORD_API_ADDRESS
+        await fetch(NEW_WORD_API_ADDRESS, {
+        method: "POST",
+        body: JSON.stringify({
+            "newWord": suggestedWord
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+        });
+
+        alert(suggestedWord+" has been sent for review")
+        suggestInput.value = ""
+    });
+</script>

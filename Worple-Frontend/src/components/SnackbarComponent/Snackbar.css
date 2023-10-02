@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.animation-div {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    z-index: -1;
+}
+
+@keyframes popInOutAnimation {
+    0% {top:0 }
+    40% {top: 70px}
+    60% {top: 70px}
+    100% {top: 0px}
+}

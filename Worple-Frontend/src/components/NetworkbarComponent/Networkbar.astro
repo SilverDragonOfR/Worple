@@ -1,0 +1,13 @@
+---
+import "./Networkbar.css"
+---
+
+<h1 class="net-div">
+    <i class="fa fa-wifi"></i>
+</h1>
+
+<script>
+    document.querySelector(".net-div").style.color = window.navigator.onLine ? "forestgreen" : "firebrick"
+    window.addEventListener('online', () => {document.querySelector(".net-div").style.color = "forestgreen"});
+    window.addEventListener('offline', () => {document.querySelector(".net-div").style.color = "firebrick"});
+</script>

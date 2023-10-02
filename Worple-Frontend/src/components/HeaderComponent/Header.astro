@@ -1,0 +1,40 @@
+---
+import "./Header.css"
+import { Image } from 'astro:assets';
+---
+
+<header class="header-container">
+    <div class="header-div">
+        <div class="header-div-div">
+            <Image src="/favicon.svg" alt="Purple Worple Logo" width="40" height="40"></Image>
+            <h1 class="header-title">Worple</h1>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li><button class="signin-button header-button">Sign in with <i class="fa fa-google"></i></button></li>
+                <li class="user-info-display">
+                    <h3 class="user-info-display user-info-display-h3">Pratik</h3>
+                    <img class="user-info-display user-info-display-img" src="/favicon.svg" />
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    import { signInWithGoogle } from '../../Firebase'
+
+    const signInBtn = document.querySelector(".signin-button")
+    const userInfoDisplay = document.querySelectorAll(".user-info-display")
+
+    signInBtn.addEventListener("click", async () => {
+        await signInWithGoogle()
+        signInBtn.hidden = true
+        userInfoDisplay.forEach((ele) => {
+            ele.style.display = "flex"
+        })
+        document.querySelector(".user-info-display-h3").textContent = localStorage.getItem("name")
+        document.querySelector(".user-info-display-img").src = localStorage.getItem("photoURL")
+    })
+
+</script>

@@ -1,0 +1,20 @@
+.qr-outer-box {
+    background-color: black;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+}
+.qr-outer-box:hover {
+    transform: scale(1.02);
+    transition-duration: 200ms;
+}
+.qr-inner-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gold;
+    border-radius: 1rem;
+}
